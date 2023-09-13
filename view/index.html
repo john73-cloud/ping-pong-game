@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script>
+        if (window.localStorage.getItem("token") == null || window.localStorage.getItem("token") == "") {
+            window.location = "/view/login.html"
+        }
+    </script>
+</head>
+
+<body>
+    <p class="header">welcome <span class="name"></span></p>
+    <button class="btn">new game</button>
+</body>
+<script>
+    console.log(atob(window.localStorage.getItem("token")))
+</script>
+<script src="logic/index.js"></script>
+
+</html>

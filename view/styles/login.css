@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.container {
+    width: 30vw;
+    height: 80vh;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn,
+.input {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.input {
+    border: 2px solid black;
+    outline: none;
+    padding: 10px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
